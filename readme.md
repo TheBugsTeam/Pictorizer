@@ -1,8 +1,11 @@
 # cloudified ☁️🎮
 
 ## Tartalomjegyzék
-- [Leírás](#%EF%B8%8F%EF%B8%8F%EF%B8%8F-le%C3%ADr%C3%A1s)
+- [Leírás](#%EF%B8%8F-le%C3%ADr%C3%A1s)
 - [Dokumentáció](#-dokument%C3%A1ci%C3%B3)
+  - [Funkcionális követelmények](#-dokument%C3%A1ci%C3%B3)
+  - [Nem funkcionális követelmények](#-dokument%C3%A1ci%C3%B3)
+  - [Use-case diagram](#-dokument%C3%A1ci%C3%B3)
 
 ### 🖊️ Leírás
 
