@@ -6,6 +6,8 @@
   - [Funkcionális követelmények](#funkcion%C3%A1lis-k%C3%B6vetelm%C3%A9nyek)
   - [Nem funkcionális követelmények](#nem-funkcion%C3%A1lis-k%C3%B6vetelm%C3%A9nyek)
   - [Use-case diagram](#use-case-diagram)
+  - [Használt technológiák](#haszn%C3%A1lt-technol%C3%B3gi%C3%A1k)
+  - [Használt eszközök](#haszn%C3%A1lt-eszk%C3%B6z%C3%B6k)
 
 ## 🖊️ Leírás
 
@@ -35,4 +37,44 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 <img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700">
 
 
-🥔🥔🥔🥔
+### Használt technológiák:
+ - [Node.js](https://nodejs.org/en/)
+<p align="left">
+  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Node.js_logo.svg">
+</p>
+
+ - [Express.js](https://expressjs.com/)
+<p align="left">
+  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Expressjs.png">
+</p>
+
+ - [mongoDB](https://www.mongodb.com/)
+<p align="left">
+  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/MongoDB_Logo.svg">
+</p>
+
+ - [React.js](https://reactjs.org/)
+<p align="left">
+  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/React-icon.svg">
+</p>
+
+ ***További használt package-ek a [`package.json`](https://github.com/TheBugsTeam/cloudified/blob/main/package.json) fájlban találhatók meg***
+
+### Használt eszközök:
+ - [Visual Studio Code](https://code.visualstudio.com/)
+ 
+<p align="left">
+  <img width=100px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Visual_Studio_Code_1.35_icon.svg">
+</p>
+
+- [Figma](https://www.figma.com/)
+<p align="left">
+  <img height=100px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Figma-logo.svg">
+</p>
+
+ - [Postman](https://www.postman.com/)
+<p align="left">
+  <img width=150px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Postman.png">
+</p>
+
+Sorry for the long post, here's a potato 🥔
