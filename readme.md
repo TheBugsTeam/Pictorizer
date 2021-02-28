@@ -20,3 +20,4 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
  - Ne töltsön keresésnél sokat (mondjuk napi 2x-i scrape)
 
 **Use-case diagram:**
+![alt text](https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png)
