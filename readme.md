@@ -15,7 +15,7 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 
 ### 📄 Dokumentáció
 
-**Funkcionális követelmények:**
+## Funkcionális követelmények:
 - Játékok keresése regisztráció nélkül
 - Ha elérhető a játék, kilistázzuk ki, hogy hol
 - Ha nem érhető el a játék semelyik szolgálatnál az közöljük a felhasználóval
@@ -23,14 +23,14 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 - Fel tudjunk venni játékot saját library-ba
 - Legyen link a játékhoz hogy meg tudjuk venni, azon a platformon, ahol akarjuk
 
-**Nem funkcionális követelmények:**
+## Nem funkcionális követelmények:
  - A program ne sértse meg az etikai kódexet (web scraping)
  - Felhasználók jelszavainak titkosítása (bcryt)
  - A felhasználói felület könnyen átlátható legyen
  - Ne fagyjon le a program hibás bemenetek esetén sem
  - Ne töltsön keresésnél sokat (mondjuk napi 2x-i scrape)
 
-**Use-case diagram:**
+## Use-case diagram:
 
 <img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700">
 
