@@ -1,8 +1,12 @@
-# cloudified
+# cloudified ☁️🎮
+
+
 
 Manapság egyre elterjedtebb a cloudgaming fogalma, mely lehetővé teszi a videojáték távoli szerveren történő futtatását. Ehhez elég megfelelő internetkapcsolat és egy *potato* pc *(ppc)*. 
 
 A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken. Ennek a weboldalnak a célja, hogy megnézzük, melyik játékot, melyik szolgáltatónál tudjuk játszani.
+
+📄📄📄
 
 **Funkcionális követelmények:**
 - Játékok keresése regisztráció nélkül
@@ -22,3 +26,6 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 **Use-case diagram:**
 
 <img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700">
+
+
+🥔🥔🥔🥔
