@@ -21,4 +21,4 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 
 **Use-case diagram:**
 
-<img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700" height="700">
+<img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700">
