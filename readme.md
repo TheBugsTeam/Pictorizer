@@ -3,9 +3,9 @@
 ## Tartalomjegyzék
 - [Leírás](#%EF%B8%8F-le%C3%ADr%C3%A1s)
 - [Dokumentáció](#-dokument%C3%A1ci%C3%B3)
-  - [Funkcionális követelmények](#-dokument%C3%A1ci%C3%B3)
-  - [Nem funkcionális követelmények](#-dokument%C3%A1ci%C3%B3)
-  - [Use-case diagram](#-dokument%C3%A1ci%C3%B3)
+  - [Funkcionális követelmények](#funkcion%C3%A1lis-k%C3%B6vetelm%C3%A9nyek)
+  - [Nem funkcionális követelmények](#nem-funkcion%C3%A1lis-k%C3%B6vetelm%C3%A9nyek)
+  - [Use-case diagram](#use-case-diagram)
 
 ### 🖊️ Leírás
 
@@ -13,7 +13,7 @@ Manapság egyre elterjedtebb a cloudgaming fogalma, mely lehetővé teszi a vide
 
 A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken. Ennek a weboldalnak a célja, hogy megnézzük, melyik játékot, melyik szolgáltatónál tudjuk játszani.
 
-### 📄 Dokumentáció
+## 📄 Dokumentáció
 
 ## Funkcionális követelmények:
 - Játékok keresése regisztráció nélkül
