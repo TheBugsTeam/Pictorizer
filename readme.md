@@ -1,7 +1,7 @@
 # cloudified ☁️🎮
 
-- [Leírás](#leiras)
-- [Dokumentáció](#dokumentacio)
+- [Leírás](#-leiras)
+- [Dokumentáció](#-dokument%C3%A1ci%C3%B3)
 
 ### 🖊️🖊️🖊️ Leírás
 
