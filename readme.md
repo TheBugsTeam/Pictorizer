@@ -1,6 +1,6 @@
 # cloudified ☁️🎮
 
-## Tartalomjegyzék
+## 📙 Tartalomjegyzék
 - [Leírás](#%EF%B8%8F-le%C3%ADr%C3%A1s)
 - [Dokumentáció](#-dokument%C3%A1ci%C3%B3)
   - [Funkcionális követelmények](#funkcion%C3%A1lis-k%C3%B6vetelm%C3%A9nyek)
@@ -24,6 +24,8 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 - Lehessen regisztrálni, így akár a saját steam, epic, gog, origin stb. könyvtárunkat automatikusan be tudjuk rakni a library-be
 - Fel tudjunk venni játékot saját library-ba
 - Legyen link a játékhoz hogy meg tudjuk venni, azon a platformon, ahol akarjuk
+- Fórum
+- Véleményzés a játékokhoz
 
 ### Nem funkcionális követelmények:
  - A program ne sértse meg az etikai kódexet (web scraping)
@@ -37,7 +39,7 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 <img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700">
 
 
-### Használt technológiák:
+## 🔧 Használt technológiák:
  - [Node.js](https://nodejs.org/en/)
 <p align="left">
   <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Node.js_logo.svg">
@@ -60,7 +62,7 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 
  ***További használt package-ek a [`package.json`](https://github.com/TheBugsTeam/cloudified/blob/main/package.json) fájlban találhatók meg***
 
-### Használt eszközök:
+## 🔨 Használt eszközök:
  - [Visual Studio Code](https://code.visualstudio.com/)
  
 <p align="left">
