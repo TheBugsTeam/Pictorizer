@@ -24,6 +24,7 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 - Lehessen regisztrálni, így akár a saját steam, epic, gog, origin stb. könyvtárunkat automatikusan be tudjuk rakni a library-be
 - Fel tudjunk venni játékot saját library-ba
 - Legyen link a játékhoz hogy meg tudjuk venni, azon a platformon, ahol akarjuk
+- *Fórum*
 - Véleményzés a játékokhoz
 
 ### Nem funkcionális követelmények:
