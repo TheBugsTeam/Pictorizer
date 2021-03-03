@@ -19,8 +19,8 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 
 ### Funkcionális követelmények:
 - Játékok keresése regisztráció nélkül
-- Ha elérhető a játék, kilistázzuk ki, hogy hol
-- Ha nem érhető el a játék semelyik szolgálatnál az közöljük a felhasználóval
+- Ha elérhető a játék, listázzuk ki, hogy hol
+- Ha nem érhető el a játék semelyik szolgálatnál azt közöljük a felhasználóval
 - Lehessen regisztrálni, így akár a saját steam, epic, gog, origin stb. könyvtárunkat automatikusan be tudjuk rakni a library-be
 - Fel tudjunk venni játékot saját library-ba
 - Legyen link a játékhoz hogy meg tudjuk venni, azon a platformon, ahol akarjuk
