@@ -1,3 +1,4 @@
+
 # cloudified ☁️🎮
 
 ## 📙 Tartalomjegyzék
@@ -40,43 +41,23 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
 </p>
 
 ## 🔧 Használt technológiák:
- - [Node.js](https://nodejs.org/en/)
-<p align="left">
-  <a href="https://nodejs.org/en/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Node.js_logo.svg"></a>
-</p>
 
- - [Express.js](https://expressjs.com/)
-<p align="left">
-  <a href="https://expressjs.com/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Expressjs.png"></a>
-</p>
-
- - [mongoDB](https://www.mongodb.com/)
-<p align="left">
-  <a href="https://www.mongodb.com/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/MongoDB_Logo.svg"></a>
-</p>
-
- - [React.js](https://reactjs.org/)
-<p align="left">
-  <a href="https://reactjs.org/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/React-icon.svg"></a>
-</p>
+| Mire | Mit | Link |
+|:---:|:---:|:---:|
+| Back-end |<a href="https://nodejs.org/en/"><img width=50px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Node.js_logo.svg"></a> | [Node.js](https://nodejs.org/en/)
+| Routing |<a href="https://expressjs.com/"><img width=100px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Expressjs.png"></a>| [Express.js](https://expressjs.com/)
+| DB | <a href="https://www.mongodb.com/"><img width=100px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/MongoDB_Logo.svg"></a> | [mongoDB](https://www.mongodb.com/)
+| Front-end |  <a href="https://reactjs.org/"><img width=50px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/React-icon.svg"></a> | [React.js](https://reactjs.org/)
 
  ***További használt package-ek a [`package.json`](https://github.com/TheBugsTeam/cloudified/blob/main/package.json) fájlban találhatók meg***
 
 ## 🔨 Használt eszközök:
- - [Visual Studio Code](https://code.visualstudio.com/)
- 
-<p align="left">
-  <img width=100px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Visual_Studio_Code_1.35_icon.svg">
-</p>
 
-- [Figma](https://www.figma.com/)
-<p align="left">
-  <img height=100px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Figma-logo.svg">
-</p>
+| Mire | Mit | Link
+|:---:|:---:|:---:|
+| Kódolás | <a href="https://code.visualstudio.com/"><img width=50px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Visual_Studio_Code_1.35_icon.svg"></a> | [Visual Studio Code](https://code.visualstudio.com/)
+| Látvány | <a href="https://www.figma.com/"><img height=40px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Figma-logo.svg"></a> | [Figma](https://www.figma.com/)
+| Testing requests | <a href="https://www.postman.com/"><img width=90px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Postman.png"></a> | [Postman](https://www.postman.com/)
 
- - [Postman](https://www.postman.com/)
-<p align="left">
-  <img width=150px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Postman.png">
-</p>
 
 Sorry for the long post, here's a potato 🥔
