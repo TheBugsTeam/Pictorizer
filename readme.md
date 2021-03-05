@@ -35,29 +35,29 @@ A különböző szolgáltatók más-más játékokat *hostolnak* a szervereiken.
  - Ne töltsön keresésnél sokat (mondjuk napi 2x-i scrape)
 
 ### Use-case diagram:
-
-<img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700">
-
+<p align="center">
+  <img src="https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/images/cloudified-use-case.png" width="700">
+</p>
 
 ## 🔧 Használt technológiák:
  - [Node.js](https://nodejs.org/en/)
 <p align="left">
-  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Node.js_logo.svg">
+  <a href="https://nodejs.org/en/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Node.js_logo.svg"></a>
 </p>
 
  - [Express.js](https://expressjs.com/)
 <p align="left">
-  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Expressjs.png">
+  <a href="https://expressjs.com/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Expressjs.png"></a>
 </p>
 
  - [mongoDB](https://www.mongodb.com/)
 <p align="left">
-  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/MongoDB_Logo.svg">
+  <a href="https://www.mongodb.com/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/MongoDB_Logo.svg"></a>
 </p>
 
  - [React.js](https://reactjs.org/)
 <p align="left">
-  <img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/React-icon.svg">
+  <a href="https://reactjs.org/"><img width=200px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/React-icon.svg"></a>
 </p>
 
  ***További használt package-ek a [`package.json`](https://github.com/TheBugsTeam/cloudified/blob/main/package.json) fájlban találhatók meg***
