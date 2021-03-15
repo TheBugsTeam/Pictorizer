@@ -8,9 +8,9 @@
   - [Nem funkcionális követelmények](#nem-funkcion%C3%A1lis-k%C3%B6vetelm%C3%A9nyek)
   - [Use-case diagram](#use-case-diagram)
   - [Use-case táblázatok](https://github.com/TheBugsTeam/cloudified/tree/main/Documentation/use-case%20tables)
-  - - [Regisztráció](https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/use-case%20tables/Registration.md)
-  - - [Keresés](https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/use-case%20tables/Search.md)
-  - - [Komment írása](https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/use-case%20tables/Write%20a%20comment.md)
+    - [Regisztráció](https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/use-case%20tables/Registration.md)
+    - [Keresés](https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/use-case%20tables/Search.md)
+    - [Komment írása](https://github.com/TheBugsTeam/cloudified/blob/main/Documentation/use-case%20tables/Write%20a%20comment.md)
 - [Használt technológiák](#-haszn%C3%A1lt-technol%C3%B3gi%C3%A1k)
 - [Használt eszközök](#-haszn%C3%A1lt-eszk%C3%B6z%C3%B6k)
 
