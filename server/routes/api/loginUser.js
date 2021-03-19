@@ -1,7 +1,6 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const dotenv = require("dotenv").config({ path: "./server/config/.env" });
 const router = express.Router();
 
 const auth = require("../../middleware/auth");
