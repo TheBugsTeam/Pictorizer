@@ -3,6 +3,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 
+const dotenv = require("dotenv").config({ path: "./server/config/.env" });
+
 const { registrationValidation } = require("../../validation/joi_validations");
 const User = require("../../models/User");
 
