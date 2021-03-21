@@ -4,7 +4,7 @@ const router = express.Router();
 
 const Game = require("../../models/Game");
 
-router.get("/:title", async (req, res) => {
+router.post("/:title", async (req, res) => {
   try {
     let game = await Game.findOne({ urlTitle: req.params.title }).select(
       "-urlTitle"
@@ -15,16 +15,18 @@ router.get("/:title", async (req, res) => {
   } catch (error) {}
 });
 
-router.get("/", async (req, res) => {
+//autocomplete results
+router.get("/:term", async (req, res) => {
   let { search, stadia, geforce } = req.query;
+  let searchTerm = req.params.term;
 
   try {
     let result = await Game.aggregate([
       {
         $search: {
           autocomplete: {
-            query: `${search}`,
-            path: "title",
+            query: `${searchTerm}`,
+            path: "name",
             fuzzy: {
               maxEdits: 2,
               prefixLength: 3,

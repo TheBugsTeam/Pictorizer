@@ -71,7 +71,7 @@ async function createGame(response) {
   tags = [];
   if (tagsRaw !== null) {
     for (const tag of tagsRaw) {
-      tags.push(tag.name);
+      if (!/^[\u0400-\u04FF ]+$/.test(tag.name)) tags.push(tag.name);
     }
   }
   let game = {

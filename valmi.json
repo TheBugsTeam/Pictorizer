@@ -1,0 +1,10 @@
+{
+  "autocomplete": {
+    "query": "cyberpunk",
+    "path": "name",
+    "fuzzy": {
+      "maxEdits": 2,
+      "prefixLength": 3
+    }
+  }
+}

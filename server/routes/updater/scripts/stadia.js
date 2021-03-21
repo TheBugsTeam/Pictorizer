@@ -25,15 +25,15 @@ const stadiaUpdate = async () => {
   games.sort();
 
   const last = games[games.length - 1];
-  let str = "[";
+  let str = "{";
   for (let item of games) {
     if (item != last) {
-      str += '{ "title": "' + item + '"},';
+      str += '"' + item + '":{"new": true},';
     } else {
-      str += '{ "title": "' + item + '"}';
+      str += '"' + item + '":{"new": true}';
     }
   }
-  str += "]";
+  str += "}";
 
   return JSON.parse(str);
 

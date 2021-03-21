@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const dotenv = require("dotenv").config({ path: "./server/config/.env" });
 
 const connectDB = require("./config/db");
@@ -14,6 +15,7 @@ if (dotenv.error) {
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json({ extented: false }));
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("API is running");

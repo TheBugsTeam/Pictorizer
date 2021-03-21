@@ -8,6 +8,7 @@ class Game {
   constructor(title, store) {
     this.title = title;
     this.stores = [];
+    this.new = true;
     if (store != "") {
       this.stores.push(store);
     }
@@ -44,9 +45,22 @@ const geforceUpdate = async () => {
         }
       }
     });
-    return games;
 
-    const data = JSON.stringify(games);
+    let gameObjs = {};
+    for (const game of games) {
+      let obj = {
+        [game.title]: {
+          stores: game.stores,
+          new: game.new,
+        },
+      };
+      //console.log(obj);
+      Object.assign(gameObjs, obj);
+    }
+
+    return gameObjs;
+
+    const data = JSON.stringify(gameObjs);
     fs.writeFile("./server/data/geforce.json", data, function (err) {
       if (err) {
         console.log(err);

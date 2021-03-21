@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const GameSchema = new mongoose.Schema({
-  urlTitle: {
+  shortName: {
     type: String,
     unique: true,
   },
-  title: {
+  name: {
     type: String,
     unique: true,
   },
@@ -18,8 +18,26 @@ const GameSchema = new mongoose.Schema({
   stadia: {
     type: Boolean,
   },
-  indexImage: String,
+  luna: {
+    type: Boolean,
+  },
+  vortex: {
+    steam: Boolean,
+    epic: Boolean,
+    gog: Boolean,
+    uplay: Boolean,
+  },
+  image: String,
   rawgURL: String,
+  tags: [String],
+  genres: [String],
+  publishers: [String],
+  stores: [
+    {
+      storeId: String,
+      url: String,
+    },
+  ],
 });
 
 module.exports = Game = mongoose.model("Game", GameSchema);
