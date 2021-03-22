@@ -2,17 +2,13 @@
 
 ## 💾Telepítés
 
-```sh
-$ git clone https://github.com/TheBugsTeam/cloudified.git
-```
+**`$ git clone https://github.com/TheBugsTeam/cloudified.git`**
 
-```sh
-$ npm install
-```
+**`$ cd cloudified`**
 
-```sh
-$ npm run dev
-```
+**`$ npm install`**
+
+**`$ npm run dev`**
 
 ## 📙 Tartalomjegyzék
 
