@@ -37,7 +37,11 @@ const SearchBar = ({ setChosen }) => {
             {talalat && (
                 <ul>
                     {talalat.map((item) => (
-                        <li onClick={() => printGameData(item)}>{item.name}</li>
+                        <>
+                            <li onClick={() => printGameData(item)}>
+                                {item.name}
+                            </li>
+                        </>
                     ))}
                 </ul>
             )}

@@ -5,10 +5,12 @@ const AvailabilityContainer = ({ chosen }) => {
                 <tbody>
                     <tr>
                         <td>Geforce now</td>
-                        {Object.keys(chosen.geforce).map((item) => {
+                        {Object.keys(chosen.geforce).map((item) => (
                             // console.log(chosen.geforce[item])
-                            <td>{chosen.geforce[item]}</td>;
-                        })}
+                            <td style={{ width: 100 }}>
+                                {chosen.geforce[item] ? "✔️" : "❌"}
+                            </td>
+                        ))}
                     </tr>
                 </tbody>
             </table>
