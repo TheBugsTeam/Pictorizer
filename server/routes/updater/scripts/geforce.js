@@ -58,6 +58,18 @@ const geforceUpdate = async () => {
       Object.assign(gameObjs, obj);
     }
 
+    //#iM sPeCiAL
+    let obj = gameObjs["assassins-creed-iv-black-flag-gold-edition"];
+    let temp = obj.stores;
+    let newG = {
+      ["assassins-creed-black-flag-gold-edition"]: {
+        stores: temp.stores,
+        new: temp.new,
+      },
+    };
+    Object.assign(gameObjs, newG);
+    delete gameObjs["assassins-creed-iv-black-flag-gold-edition"];
+
     return gameObjs;
 
     const data = JSON.stringify(gameObjs);

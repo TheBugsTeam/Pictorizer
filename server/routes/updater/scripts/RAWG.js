@@ -1,8 +1,7 @@
 const axios = require("axios");
 const dotenv = require("dotenv").config({ path: "./server/config/.env" });
 
-const findGame = async (search) => {
-  //console.log(search);
+const findCommonTitle = async (search) => {
   const req1 =
     "https://api.rawg.io/api/games?search=" +
     search +
@@ -18,15 +17,11 @@ const findGame = async (search) => {
 
   try {
     const response = await axios.get(encodeURI(req1));
-    let game = await createGame(response);
-
-    return game;
-  } catch (err) {
-    //console.error(err);
+    return getGameDetails(response);
+  } catch (error) {
+    //console.error(error);
     const response = await axios.get(encodeURI(req2));
-    let game = await createGame(response);
-
-    return game;
+    return getGameDetails(response);
   }
 };
 
@@ -58,9 +53,13 @@ const getPublishers = async (shortName) => {
   return publishers;
 };
 
-module.exports = findGame;
+module.exports = {
+  findCommonTitle,
+  getPublishers,
+  getStores,
+};
 
-async function createGame(response) {
+const getGameDetails = (response) => {
   const data = response.data.results[0];
   const genresRaw = response.data.results[0].genres;
   genres = [];
@@ -80,8 +79,22 @@ async function createGame(response) {
     image: data.background_image,
     tags: tags,
     genres: genres,
-    publishers: await getPublishers(data.slug),
-    stores: await getStores(data.slug),
+    geforce: {
+      steam: false,
+      epic: false,
+      gog: false,
+      uplay: false,
+      origin: false,
+    },
+    stadia: false,
+    luna: false,
+    vortex: {
+      steam: false,
+      epic: false,
+      gog: false,
+      uplay: false,
+      origin: false,
+    },
   };
   return game;
-}
+};

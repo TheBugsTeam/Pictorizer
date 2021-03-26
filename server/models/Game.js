@@ -10,25 +10,58 @@ const GameSchema = new mongoose.Schema({
     unique: true,
   },
   geforce: {
-    steam: Boolean,
-    epic: Boolean,
-    gog: Boolean,
-    uplay: Boolean,
+    steam: {
+      type: Boolean,
+      default: null,
+    },
+    epic: {
+      type: Boolean,
+      default: null,
+    },
+    gog: {
+      type: Boolean,
+      default: null,
+    },
+    uplay: {
+      type: Boolean,
+      default: null,
+    },
+    origin: {
+      type: Boolean,
+      default: null,
+    },
   },
   stadia: {
     type: Boolean,
+    default: null,
   },
   luna: {
     type: Boolean,
+    default: null,
   },
   vortex: {
-    steam: Boolean,
-    epic: Boolean,
-    gog: Boolean,
-    uplay: Boolean,
+    steam: {
+      type: Boolean,
+      default: null,
+    },
+    epic: {
+      type: Boolean,
+      default: null,
+    },
+    gog: {
+      type: Boolean,
+      default: null,
+    },
+    uplay: {
+      type: Boolean,
+      default: null,
+    },
+    origin: {
+      type: Boolean,
+      default: null,
+    },
   },
   image: String,
-  rawgURL: String,
   tags: [String],
   genres: [String],
   publishers: [String],
