@@ -2,51 +2,55 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const SearchBar = ({ setChosen }) => {
-    const url = "http://localhost:5000/api/games/";
-    const [talalat, setTalalat] = useState(null);
-    const [term, setTerm] = useState();
-    //const [chosen, setChosen] = useState();
+  const [talalat, setTalalat] = useState(null);
+  const [term, setTerm] = useState();
+  //const [chosen, setChosen] = useState();
 
-    useEffect(() => {
-        const response = axios
-            .get(`http://localhost:5000/api/games/${term}`)
-            .then((res) => {
-                console.log(res.data);
-                setTalalat(res.data);
-                talalat.map((item) => {
-                    console.log(item.name);
-                });
-            })
-            .catch((err) => console.error(err));
-    }, [term]);
+  useEffect(async () => {
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/api/autocomplete",
+        {
+          searchTerm: term,
+        }
+      );
+      setTalalat(response.data);
 
-    const searchInput = (e) => {
-        //console.log(e.target.value);
-        setTerm(e.target.value);
-    };
+      //   talalat.map((item) => {
+      //     console.log(item);
+      //   });
+    } catch (error) {
+      console.error(error);
+    }
+  }, [term]);
 
-    const printGameData = (item) => {
-        console.log(item);
-        setChosen(item);
-    };
+  const searchInput = (e) => {
+    if (e.target.value) setTerm(e.target.value);
+  };
 
-    return (
-        <div className="App">
-            <h1>Hello</h1>
-            <input onChange={searchInput} type="text" />
-            {talalat && (
-                <ul>
-                    {talalat.map((item) => (
-                        <>
-                            <li onClick={() => printGameData(item)}>
-                                {item.name}
-                            </li>
-                        </>
-                    ))}
-                </ul>
-            )}
-        </div>
-    );
+  const printGameData = (item) => {
+    console.log(item.commonTitle);
+
+    //itt át kell adni a common title-t és behozni új oldalon azt hogy:
+    //`http://localhost:5000/api/games/${item.commonTitle}` adatait
+    //get request-tel
+    //setChosen(item);
+  };
+
+  return (
+    <div className="App">
+      <input onChange={searchInput} type="text" />
+      {talalat && (
+        <ul>
+          {talalat.map((item) => (
+            <>
+              <li onClick={() => printGameData(item)}>{item.fullGameTitle}</li>
+            </>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 };
 
 export default SearchBar;
