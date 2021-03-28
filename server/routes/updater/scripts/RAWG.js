@@ -1,5 +1,4 @@
 const axios = require("axios");
-const dotenv = require("dotenv").config({ path: "./server/config/.env" });
 
 const findCommonTitle = async (search) => {
   const req1 =

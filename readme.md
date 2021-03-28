@@ -7,6 +7,7 @@
 **`$ cd cloudified`**
 
 **`$ npm install`**
+_a klins mappában lévőt is_
 
 **`$ npm run dev`**
 
