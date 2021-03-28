@@ -76,4 +76,4 @@ A különböző szolgáltatók más-más játékokat _hostolnak_ a szervereiken.
 |     Látvány      |             <a href="https://www.figma.com/"><img height=40px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Figma-logo.svg"></a>              |           [Figma](https://www.figma.com/)            |
 | Testing requests |              <a href="https://www.postman.com/"><img width=90px src="https://raw.githubusercontent.com/TheBugsTeam/cloudified/main/Documentation/images/Postman.png"></a>               |         [Postman](https://www.postman.com/)          |
 
-Sorry for the long post, here's a potato 🥔
+Sorry for the long post, here's a potato [🥔](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
