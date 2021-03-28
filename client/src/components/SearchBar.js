@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import styled from "styled-components";
+
 const SearchBar = ({ setChosen }) => {
   const [talalat, setTalalat] = useState(null);
   const [term, setTerm] = useState();
@@ -14,6 +16,7 @@ const SearchBar = ({ setChosen }) => {
           searchTerm: term,
         }
       );
+      console.log(response.data);
       setTalalat(response.data);
 
       //   talalat.map((item) => {
@@ -38,19 +41,35 @@ const SearchBar = ({ setChosen }) => {
   };
 
   return (
-    <div className="App">
+    <div>
       <input onChange={searchInput} type="text" />
-      {talalat && (
-        <ul>
-          {talalat.map((item) => (
-            <>
-              <li onClick={() => printGameData(item)}>{item.fullGameTitle}</li>
-            </>
-          ))}
-        </ul>
-      )}
+      <StyledDiv>
+        {talalat && (
+          <ul>
+            {talalat.map((item) => (
+              <>
+                <li onClick={() => printGameData(item)}>
+                  {item.fullGameTitle}
+                </li>
+              </>
+            ))}
+          </ul>
+        )}
+      </StyledDiv>
     </div>
   );
 };
+
+const StyledDiv = styled.div`
+  position: absolute;
+  ul {
+    list-style-type: none;
+    display: block;
+  }
+
+  li {
+    color: red;
+  }
+`;
 
 export default SearchBar;
