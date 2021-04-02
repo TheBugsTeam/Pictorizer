@@ -19,13 +19,19 @@ const Nav = () => {
       <div id="horizontal">
         <ul>
           <li>
-            <Link to="/search">Search</Link>
+            <Link id="link" to="/search">
+              SEARCH
+            </Link>
           </li>
           <li>
-            <Link to="/forum">Forum</Link>
+            <Link id="link" to="/forum">
+              FORUM
+            </Link>
           </li>
           <li>
-            <Link to="/gameservicies">Game Servicies</Link>
+            <Link id="link" to="/gameservicies">
+              GAME SERVICIES
+            </Link>
           </li>
         </ul>
       </div>
@@ -34,7 +40,7 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
-  min-height: 5vh;
+  min-height: 8vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -55,8 +61,12 @@ const StyledNav = styled.nav`
   }
   #logo {
     font-size: 1.5rem;
-    font-family: "Lobster", cursive;
+    font-family: "Comfortaa", cursive;
     font-weight: lighter;
+  }
+  #link {
+    font-size: 1rem;
+    font-weight: bold;
   }
 `;
 
