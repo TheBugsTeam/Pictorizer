@@ -40,10 +40,15 @@ const SearchBar = ({ setChosen }) => {
     //setChosen(item);
   };
 
+  const elkattint = () => {
+    setTalalat(null);
+  };
+
   return (
     <div>
       <input
         onChange={searchInput}
+        onBlur={elkattint}
         type="text"
         style={{
           width: "350px",
