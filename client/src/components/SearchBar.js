@@ -39,7 +39,9 @@ const SearchBar = ({ setChosen }) => {
     //get request-tel
     //setChosen(item);
   };
-
+  const elkattint = () => {
+    setTalalat(null);
+  };
   return (
     <div>
       <p
@@ -53,6 +55,7 @@ const SearchBar = ({ setChosen }) => {
         is
       </p>
       <input
+        onBlur={elkattint}
         onChange={searchInput}
         type="text"
         style={{
