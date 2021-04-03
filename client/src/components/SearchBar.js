@@ -40,15 +40,20 @@ const SearchBar = ({ setChosen }) => {
     //setChosen(item);
   };
 
-  const elkattint = () => {
-    setTalalat(null);
-  };
-
   return (
     <div>
+      <p
+        style={{
+          fontFamily: "'Press Start 2P', cursive",
+          float: "left",
+          paddingTop: "15px",
+          paddingRight: "15px",
+        }}
+      >
+        is
+      </p>
       <input
         onChange={searchInput}
-        onBlur={elkattint}
         type="text"
         style={{
           width: "350px",
@@ -66,6 +71,16 @@ const SearchBar = ({ setChosen }) => {
         }}
         placeholder="Search..."
       />
+      <p
+        style={{
+          fontFamily: "'Press Start 2P', cursive",
+          float: "right",
+          paddingTop: "15px",
+          paddingLeft: "15px",
+        }}
+      >
+        cloudified?
+      </p>
       <StyledDiv>
         {talalat && (
           <ul>
@@ -96,7 +111,7 @@ const StyledImg = styled.img`
   padding-right: 10px;
   vertical-align: middle;
   float: left;
-  max-height: 70px;
+  max-height: 55px;
 `;
 
 const StyledDiv = styled.div`

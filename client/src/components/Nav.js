@@ -60,13 +60,14 @@ const StyledNav = styled.nav`
     position: relative;
   }
   #logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Comfortaa", cursive;
-    font-weight: lighter;
+    font-weight: bold;
   }
   #link {
     font-size: 1rem;
     font-weight: bold;
+    padding-right: 60px;
   }
 `;
 
