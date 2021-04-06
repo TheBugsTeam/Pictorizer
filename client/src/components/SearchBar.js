@@ -32,8 +32,8 @@ const SearchBar = ({ setChosen }) => {
   };
 
   const printGameData = (item) => {
-    console.log(item.commonTitle);
-
+    //console.log(item.commonTitle);
+    setChosen(item.commonTitle);
     //itt át kell adni a common title-t és behozni új oldalon azt hogy:
     //`http://localhost:5000/api/games/${item.commonTitle}` adatait
     //get request-tel
@@ -55,7 +55,7 @@ const SearchBar = ({ setChosen }) => {
         is
       </p>
       <input
-        onBlur={elkattint}
+        //onBlur={elkattint}
         onChange={searchInput}
         type="text"
         style={{

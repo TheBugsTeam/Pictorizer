@@ -6,8 +6,8 @@ import styled from "styled-components";
 
 import SearchBar from "./SearchBar";
 
-const Nav = () => {
-  const [chosen, setChosen] = useState(null);
+const Nav = ({ chosen, setChosen }) => {
+  //const [chosen, setChosen] = useState(null);
   return (
     <StyledNav>
       <h1>

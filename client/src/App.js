@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Switch, Route, useLocation, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import GlobalStyle from "./components/GlobalStyle";
 
 import GameDetails from "./pages/GameDetails";
@@ -10,10 +11,14 @@ import Search from "./pages/Search";
 
 const App = () => {
   const location = useLocation();
+  const [chosen, setChosen] = useState(null);
+  useEffect(() => {
+    console.log(chosen);
+  }, [chosen]);
   return (
     <div className="App">
       <GlobalStyle />
-      <Nav />
+      <Nav chosen={chosen} setChosen={setChosen} />
       <Switch location={location} key={location.pathname}>
         <Route path="/" exact>
           <HomePage />
@@ -24,9 +29,7 @@ const App = () => {
         <Route path="/Forum" exact>
           <Forum />
         </Route>
-        <Route path="/games/:id">
-          <GameDetails />
-        </Route>
+        <Route path="/games/:id" children={<GameDetails />} />
         <Route path="/gameservicies">
           <GameServices />
         </Route>
