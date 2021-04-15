@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </StyledBugText>
         <StyledTextConainer>
-          <a href="https://rawg.io/apidocs">
+          <a href="https://rawg.io/apidocs" target="_blank">
             <p>
               We used RAWG API <br />
               for our back-end.
@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
         </StyledTextConainer>
         <StyledCloudifiedLogoDiv>
-          <a href="https://github.com/TheBugsTeam/cloudified">
+          <a href="https://github.com/TheBugsTeam/cloudified" target="_blank">
             {<img src={github_logo} alt="github_logo" />}
             <p>Developed by TheBugsTeam</p>
           </a>
@@ -76,7 +76,10 @@ const StyledTextConainer = styled.div`
   height: 100%;
   line-height: 25px;
   padding-top: 20px;
-  img {
+  a p {
+    font-size: 13px;
+  }
+  a img {
     padding-top: 8px;
     height: 50px;
     vertical-align: bottom;
@@ -85,13 +88,14 @@ const StyledTextConainer = styled.div`
 
 const StyledCloudifiedLogoDiv = styled.div`
   text-align: center;
-  font-size: 12px;
   width: 33%;
   height: 100%;
-  padding-top: 20px;
-  img {
-    height: 60px;
-    min-height: 70px;
+  padding-top: 25px;
+  a p {
+    font-size: 12px;
+  }
+  a img {
+    height: 50px;
     padding-bottom: 5px;
   }
 `;
