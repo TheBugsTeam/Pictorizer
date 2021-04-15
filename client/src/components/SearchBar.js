@@ -106,7 +106,7 @@ const SearchBar = ({ setChosen }) => {
 };
 
 const StyledContainerDiv = styled.div`
-  width: 40%;
+  width: 37%; // így nem kilóméterekre van a cloudified felirat a searchbar-tól
 `;
 
 const StyledSearchDiv = styled.div``;

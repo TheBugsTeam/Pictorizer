@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import RawgLogo from "../images/RawgLogo.png";
-import CloudifiedLogo from "../images/CloudifiedLogo.png";
-import Cicca from "../images/Cicca.svg";
+import RawgLogo from "../images/logos/RawgLogo.png";
+import github_logo from "../images/logos/github_logo.svg";
 
 const Footer = () => {
   return (
@@ -15,15 +14,19 @@ const Footer = () => {
           </p>
         </StyledBugText>
         <StyledTextConainer>
-          <p>
-            We used RAWG API <br />
-            for our back-end.
-          </p>
-          {<img src={RawgLogo} alt="RawgLogo" />}
+          <a href="https://rawg.io/apidocs">
+            <p>
+              We used RAWG API <br />
+              for our back-end.
+            </p>
+            {<img src={RawgLogo} alt="RawgLogo" />}
+          </a>
         </StyledTextConainer>
         <StyledCloudifiedLogoDiv>
-          {<img src={Cicca} alt="Cicca" />}
-          <p>Developed by TheBugsTeam</p>
+          <a href="https://github.com/TheBugsTeam/cloudified">
+            {<img src={github_logo} alt="github_logo" />}
+            <p>Developed by TheBugsTeam</p>
+          </a>
         </StyledCloudifiedLogoDiv>
       </StyledContainerDiv>
     </StyledDiv>
@@ -39,6 +42,11 @@ const StyledDiv = styled.div`
   height: 15%;
   background-color: #363841;
   text-align: center;
+
+  a {
+    font-size: 17px;
+    color: white;
+  }
 `;
 
 // a styledDiv-en belul vertikalisan kozepre rakja a contentet
