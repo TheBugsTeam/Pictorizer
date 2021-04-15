@@ -8,6 +8,7 @@ import Forum from "./pages/Forum";
 import GameServices from "./pages/GameServices";
 import HomePage from "./pages/HomePage";
 import Search from "./pages/Search";
+import Footer from "./components/Footer";
 
 const App = () => {
   const location = useLocation();
@@ -34,6 +35,7 @@ const App = () => {
           <GameServices />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 };
