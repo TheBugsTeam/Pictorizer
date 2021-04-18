@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const SearchBar = ({ setChosen }) => {
@@ -33,16 +33,21 @@ const SearchBar = ({ setChosen }) => {
 
   const printGameData = (item) => {
     //console.log(item.commonTitle);
+    console.log(term);
+    setTerm("");
     setChosen(item.commonTitle);
+    setTalalat(null);
     //itt át kell adni a common title-t és behozni új oldalon azt hogy:
-    //`http://localhost:5000/api/games/${item.commonTitle}` adatait
+    ////`http://localhost:5000/api/games/${item.commonTitle}` adatait
     //get request-tel
     //setChosen(item);
   };
+
   const elkattint = () => {
     setTalalat(null);
     console.log("ok");
   };
+
   return (
     <StyledContainerDiv>
       <p
@@ -55,19 +60,9 @@ const SearchBar = ({ setChosen }) => {
       >
         is
       </p>
-      <p
-        style={{
-          fontFamily: "'Press Start 2P', cursive",
-          float: "right",
-          paddingTop: "15px",
-          paddingRight: "15px",
-        }}
-      >
-        cloudified?
-      </p>
       <StyledSearchDiv>
         <input
-          onBlur={elkattint}
+          //onBlur={elkattint}
           onChange={searchInput}
           type="text"
           style={{
@@ -86,15 +81,27 @@ const SearchBar = ({ setChosen }) => {
           }}
           placeholder="Search..."
         />
+        <p
+          style={{
+            fontFamily: "'Press Start 2P', cursive",
+            float: "right",
+            paddingTop: "15px",
+            paddingLeft: "15px",
+          }}
+        >
+          cloudified?
+        </p>
         <StyledSuggestionsDiv>
           {talalat && (
             <ul>
               {talalat.map((item) => (
                 <>
-                  <li onClick={() => printGameData(item)}>
-                    <div>{<StyledImg src={item.imageURL} alt="" />}</div>
-                    <StyledText>{item.fullGameTitle}</StyledText>
-                  </li>
+                  <Link to={`/games/${item.commonTitle}`}>
+                    <li onClick={() => printGameData(item)}>
+                      <div>{<StyledImg src={item.imageURL} alt="" />}</div>
+                      <StyledText>{item.fullGameTitle}</StyledText>
+                    </li>
+                  </Link>
                 </>
               ))}
             </ul>
