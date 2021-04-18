@@ -51,13 +51,9 @@ const StyledDiv = styled.div`
 
 // a styledDiv-en belul vertikalisan kozepre rakja a contentet
 const StyledContainerDiv = styled.div`
-  position: absolute;
   display: flex;
   width: 100%;
   height: 100%;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 `;
 
 const StyledBugText = styled.div`
