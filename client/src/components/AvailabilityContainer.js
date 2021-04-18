@@ -1,14 +1,14 @@
-const AvailabilityContainer = ({ chosen }) => {
+const AvailabilityContainer = ({ game }) => {
     return (
         <div>
             <table>
                 <tbody>
                     <tr>
                         <td>Geforce now</td>
-                        {Object.keys(chosen.geforce).map((item) => (
+                        {Object.keys(game.geforce).map((item) => (
                             // console.log(chosen.geforce[item])
                             <td style={{ width: 100 }}>
-                                {chosen.geforce[item] ? "✔️" : "❌"}
+                                {game.geforce[item] ? "✔️" : "❌"}
                             </td>
                         ))}
                     </tr>
