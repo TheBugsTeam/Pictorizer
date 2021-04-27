@@ -24,8 +24,8 @@ const Nav = ({ chosen, setChosen }) => {
             </Link>
           </li>
           <li>
-            <Link id="link" to="/forum">
-              FORUM
+            <Link id="link" to="/steam">
+              STEAM
             </Link>
           </li>
           <li>
