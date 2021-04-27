@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import SideContainer from "../components/SideContainer";
 import MainContainer from "../components/MainContainer";
 
-const GameDetails = ({ chosen }) => {
+const GameDetails = () => {
     const [game, setGame] = useState();
     let { id } = useParams();
     useEffect(async () => {
@@ -14,7 +14,7 @@ const GameDetails = ({ chosen }) => {
                 `http://localhost:5000/api/games/${id}`
             );
             setGame(response.data);
-            console.log(response.data);
+            // console.log(response.data);
 
             //   talalat.map((item) => {
             //     console.log(item);
@@ -25,13 +25,22 @@ const GameDetails = ({ chosen }) => {
     }, []);
     return game ? (
         <div>
-            <h1>{id}</h1>
+            <h1
+                style={{
+                    textAlign: "left",
+                    fontFamily: "Press Start 2P",
+                    marginLeft: "12%",
+                    marginTop: "20px",
+                }}
+            >
+                YES! <u>{game.name}</u> is available for cloudgaming
+            </h1>
             <MainContainer game={game} />
-            <SideContainer chosen={chosen} />
+            <SideContainer game={game} />
         </div>
     ) : (
         <div>
-            <h1>Nincs talalat</h1>
+            <h1>Nincs találat</h1>
         </div>
     );
 };
