@@ -14,6 +14,7 @@ const SteamIdInput = ({ searchSteamID, setSteamID }) => {
       <StyledInput type="text" placeholder="Your Steam ID" onChange={search} />
 
       <StyledButton
+        autoComplete="on"
         type="submit"
         value="Search"
         onClick={() => searchSteamID()}
@@ -46,6 +47,7 @@ const StyledInput = styled.input`
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-color: #7d66bd;
+  outline: none;
   //background-image: url(${SearchIcon});
   //background-position: 10px 10px;
   //background-repeat: no-repeat;
