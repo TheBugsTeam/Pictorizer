@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 const Tag = (props) => {
-    return <StyledSpan>{props.text}</StyledSpan>;
+    if (props.tag == "true") {
+        return <StyledLi>#{props.text}</StyledLi>;
+    }
+    return <StyledLi>{props.text}</StyledLi>;
 };
 
-const StyledSpan = styled.span`
-    height: 5px;
+const StyledLi = styled.li`
     font-size: 8px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: black;
+    padding: 3px 10px 3px 10px;
+    background-color: #31333a;
     border-radius: 10px;
+    color: white;
+    display: inline-block;
+    margin: 5px;
 `;
 
 export default Tag;

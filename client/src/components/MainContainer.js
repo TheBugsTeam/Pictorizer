@@ -2,16 +2,8 @@ import AvailabilityContainer from "./AvailabilityContainer";
 
 const MainContainer = ({ game }) => {
     return (
-        <div
-            style={{
-                float: "left",
-                width: "60%",
-                height: "80%",
-                backgroundColor: "lightgray",
-            }}
-        >
+        <div className="main-container">
             <AvailabilityContainer game={game} />
-            <h1>valami</h1>
         </div>
     );
 };
