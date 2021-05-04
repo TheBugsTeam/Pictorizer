@@ -1,4 +1,4 @@
-# cloudified ☁️🎮
+# cloudified ☁️
 
 # 🎮 [DEMO](https://cloudified.herokuapp.com/)
 
