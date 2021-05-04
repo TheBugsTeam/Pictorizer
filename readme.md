@@ -1,6 +1,10 @@
 # cloudified ☁️🎮
 
-## 💾Telepítés
+# Demo
+
+**`$ https://cloudified.herokuapp.com/`**
+
+## 💾 Telepítés
 
 **`$ git clone https://github.com/TheBugsTeam/cloudified.git`**
 
