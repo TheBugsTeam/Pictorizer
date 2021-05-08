@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
-import { Switch, Route, useLocation, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { useState } from "react";
 import GlobalStyle from "./components/GlobalStyle";
 
 import GameDetails from "./pages/GameDetails";
@@ -13,9 +13,6 @@ import Footer from "./components/Footer";
 const App = () => {
   const location = useLocation();
   const [chosen, setChosen] = useState(null);
-  useEffect(() => {
-    console.log(chosen);
-  }, [chosen]);
   return (
     <div className="App">
       <GlobalStyle />

@@ -6,25 +6,27 @@ import styled from "styled-components";
 const SearchBar = ({ setChosen }) => {
   const [talalat, setTalalat] = useState(null);
   const [term, setTerm] = useState();
-  //const [chosen, setChosen] = useState();
 
-  useEffect(async () => {
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/api/autocomplete",
-        {
-          searchTerm: term,
-        }
-      );
-      console.log(response.data);
-      setTalalat(response.data);
+  //TODO ezt valszeg proxyval kene vagy valami
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.post(
+          "http://localhost:5000/api/autocomplete",
+          {
+            searchTerm: term,
+          }
+        );
+        //FIXME
+        // in production
+        // https://cloudified.herokuapp.com/api/autocomplete
 
-      //   talalat.map((item) => {
-      //     console.log(item);
-      //   });
-    } catch (error) {
-      console.error(error);
+        setTalalat(response.data);
+      } catch (error) {
+        console.error(error);
+      }
     }
+    fetchData();
   }, [term]);
 
   const searchInput = (e) => {
@@ -32,15 +34,10 @@ const SearchBar = ({ setChosen }) => {
   };
 
   const printGameData = (item) => {
-    //console.log(item.commonTitle);
     console.log(term);
     setTerm("");
     setChosen(item.commonTitle);
     setTalalat(null);
-    //itt át kell adni a common title-t és behozni új oldalon azt hogy:
-    ////`http://localhost:5000/api/games/${item.commonTitle}` adatait
-    //get request-tel
-    //setChosen(item);
   };
 
   const elkattint = () => {

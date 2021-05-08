@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import styled from "styled-components";
@@ -7,7 +6,6 @@ import styled from "styled-components";
 import SearchBar from "./SearchBar";
 
 const Nav = ({ chosen, setChosen }) => {
-  //const [chosen, setChosen] = useState(null);
   return (
     <StyledNav>
       <h1>

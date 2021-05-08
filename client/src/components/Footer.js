@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </StyledBugText>
         <StyledTextConainer>
-          <a href="https://rawg.io/apidocs" target="_blank">
+          <a href="https://rawg.io/apidocs" target="_blank" rel="noreferrer">
             <p>
               We used RAWG API <br />
               for our back-end.
@@ -23,7 +23,11 @@ const Footer = () => {
           </a>
         </StyledTextConainer>
         <StyledCloudifiedLogoDiv>
-          <a href="https://github.com/TheBugsTeam/cloudified" target="_blank">
+          <a
+            href="https://github.com/TheBugsTeam/cloudified"
+            target="_blank"
+            rel="noreferrer"
+          >
             {<img src={github_logo} alt="github_logo" />}
             <p>Developed by TheBugsTeam</p>
           </a>

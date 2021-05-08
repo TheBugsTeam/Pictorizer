@@ -69,7 +69,7 @@ const getGameDetails = (response) => {
   tags = [];
   if (tagsRaw !== null) {
     for (const tag of tagsRaw) {
-      if (!/^[\u0400-\u04FF ]+$/.test(tag.name)) tags.push(tag.name);
+      if (!/[\u0400-\u04FF ]+$/.test(tag.name)) tags.push(tag.name);
     }
   }
   let game = {

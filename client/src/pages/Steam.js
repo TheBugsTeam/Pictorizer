@@ -1,6 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import axios from "axios";
 import SteamIdInput from "../components/SteamIdInput";
 import SteamGame from "../components/SteamGame";
@@ -9,37 +8,20 @@ import styled from "styled-components";
 const Steam = () => {
   const [steamID, setSteamID] = useState(null);
   const [games, setgames] = useState(null);
-  const [term, setTerm] = useState();
-  const [talalat, setTalalat] = useState(null);
 
   const searchSteamID = async () => {
     const URL = "http://localhost:5000/api/steam/" + steamID;
-    console.log("Sent");
+    //FIXME
+    // in production
+    //const URL = "https://cloudified.herokuapp.com/api/steam/" + steamID;
     try {
-      const response = await axios.get(
-        URL // 76561198094355991 is a valid SteamID
-      );
+      const response = await axios.get(URL);
       setgames(response.data);
       console.log(response.data);
     } catch (error) {
       console.error(error);
     }
   };
-
-  useEffect(async () => {
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/api/autocomplete",
-        {
-          searchTerm: term,
-        }
-      );
-      console.log(response.data);
-      setTalalat(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  }, [term]);
 
   return !games ? (
     <div>

@@ -20,7 +20,7 @@ const update = async () => {
   let n = 0;
   for (const [key, value] of Object.entries(games)) {
     n++;
-    if (n > 600) break;
+    if (n > 700) break;
     try {
       await checkGame(key, value, { geforce: true });
     } catch (error) {
@@ -71,7 +71,7 @@ async function checkGame(key, value, obj) {
         imageURL: common.image,
       });
       await game.save();
-      console.log(`new game title added`);
+      console.log(`new game title added: ${game.fullGameTitle}`);
 
       if (obj.geforce) await addGeforceGame(value, common);
       if (obj.stadia) await addStadiaGame(common);
@@ -102,7 +102,7 @@ async function addStadiaGame(common) {
       image: common.image,
     });
     await newGame.save();
-    console.log("new game added to db");
+    console.log(`new game added to db`);
   }
 }
 
