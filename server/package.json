@@ -1,0 +1,47 @@
+{
+  "name": "cloudified-api",
+  "version": "1.0.0",
+  "description": "REST API for cloudified",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBugsTeam/cloudified.git"
+  },
+  "keywords": [
+    "cloud",
+    "gaming",
+    "server",
+    "play"
+  ],
+  "author": "TheBugsTeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBugsTeam/cloudified/issues"
+  },
+  "homepage": "https://github.com/TheBugsTeam/cloudified#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.0",
+    "puppeteer": "^8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  }
+}

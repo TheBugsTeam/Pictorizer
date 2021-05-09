@@ -1,6 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 
+//Does not need for production
+const dotenv = require("dotenv").config({ path: "./server/config/.env" });
+
 const connectDB = require("./config/db");
 
 const app = express();
