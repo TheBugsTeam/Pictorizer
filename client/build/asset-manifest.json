@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5455ef87.chunk.css",
+    "main.js": "/static/js/main.6f07f318.chunk.js",
+    "main.js.map": "/static/js/main.6f07f318.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.03887cff.js",
+    "runtime-main.js.map": "/static/js/runtime-main.03887cff.js.map",
+    "static/js/2.328949f5.chunk.js": "/static/js/2.328949f5.chunk.js",
+    "static/js/2.328949f5.chunk.js.map": "/static/js/2.328949f5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5455ef87.chunk.css.map": "/static/css/main.5455ef87.chunk.css.map",
+    "static/js/2.328949f5.chunk.js.LICENSE.txt": "/static/js/2.328949f5.chunk.js.LICENSE.txt",
+    "static/media/Bethesda.899e82a5.svg": "/static/media/Bethesda.899e82a5.svg",
+    "static/media/EpicGames.fb893502.svg": "/static/media/EpicGames.fb893502.svg",
+    "static/media/GeforceNow.5e690d4b.svg": "/static/media/GeforceNow.5e690d4b.svg",
+    "static/media/Gog.com.5746ec4e.svg": "/static/media/Gog.com.5746ec4e.svg",
+    "static/media/Stadia.2cc8a76b.svg": "/static/media/Stadia.2cc8a76b.svg",
+    "static/media/Steam.2c63d946.svg": "/static/media/Steam.2c63d946.svg",
+    "static/media/Ubisoft.4590564c.svg": "/static/media/Ubisoft.4590564c.svg",
+    "static/media/check-circle-regular 2.e04218c6.svg": "/static/media/check-circle-regular 2.e04218c6.svg",
+    "static/media/github_logo.34bcd3cb.svg": "/static/media/github_logo.34bcd3cb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03887cff.js",
+    "static/js/2.328949f5.chunk.js",
+    "static/css/main.5455ef87.chunk.css",
+    "static/js/main.6f07f318.chunk.js"
+  ]
+}
