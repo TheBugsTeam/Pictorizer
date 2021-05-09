@@ -10,10 +10,7 @@ const Steam = () => {
   const [games, setgames] = useState(null);
 
   const searchSteamID = async () => {
-    const URL = "http://localhost:5000/api/steam/" + steamID;
-    //FIXME
-    // in production
-    //const URL = "https://cloudified.herokuapp.com/api/steam/" + steamID;
+    const URL = "https://cloudified-api.herokuapp.com/api/steam/" + steamID;
     try {
       const response = await axios.get(URL);
       setgames(response.data);

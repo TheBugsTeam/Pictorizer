@@ -8,7 +8,9 @@ const router = express.Router();
 const GameTitle = require("../../models/GameTitle");
 const Game = require("../../models/Game");
 
-router.patch("/", async (req, res) => {
+const updateAuth = require("../../middleware/update-auth");
+
+router.patch("/", updateAuth, async (req, res) => {
   res.json("Updating games now...");
   update();
 });

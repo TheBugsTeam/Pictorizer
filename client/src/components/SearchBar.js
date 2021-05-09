@@ -12,15 +12,11 @@ const SearchBar = ({ setChosen }) => {
     async function fetchData() {
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/autocomplete",
+          "https://cloudified-api.herokuapp.com/api/autocomplete",
           {
             searchTerm: term,
           }
         );
-        //FIXME
-        // in production
-        // https://cloudified.herokuapp.com/api/autocomplete
-
         setTalalat(response.data);
       } catch (error) {
         console.error(error);

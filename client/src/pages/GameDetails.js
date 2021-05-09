@@ -13,13 +13,8 @@ const GameDetails = () => {
     async function fetchData() {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/games/${id}`
+          `https://cloudified-api.herokuapp.com/api/games/${id}`
         );
-        //FIXME
-        // in production
-        //   const response = await axios.get(
-        //     `https://cloudified.herokuapp.com/api/games/${id}`
-        //   );
         setGame(response.data);
       } catch (error) {
         console.error(error);

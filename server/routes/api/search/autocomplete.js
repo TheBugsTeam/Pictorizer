@@ -5,7 +5,6 @@ const GameTitle = require("../../../models/GameTitle");
 
 router.post("/", async (req, res) => {
   const searchTerm = req.body.searchTerm;
-
   if (searchTerm) {
     try {
       let result = await GameTitle.aggregate([
