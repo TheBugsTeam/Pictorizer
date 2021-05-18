@@ -14,6 +14,20 @@ body{
     color: white;
     font-size: 1rem;
 }
+
+.App{
+    position:relative;
+    min-height: 100vh;
+}
+
+.content-wrapper{
+    /* padding-bottom:2.5rem; */
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 20px;

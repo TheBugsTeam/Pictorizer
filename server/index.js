@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 
-//Does not need for production
 const dotenv = require("dotenv").config({ path: "./server/config/.env" });
 
 const connectDB = require("./config/db");
@@ -14,6 +13,10 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json({ extented: false }));
 app.use(cors());
+
+app.get("/", (req, res) => {
+  res.send("API is running");
+});
 
 //app.use("/api/users", require("./routes/api/users"));
 //app.use("/api/login", require("./routes/api/loginUser"));

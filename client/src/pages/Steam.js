@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import SteamIdInput from "../components/SteamIdInput";
-import SteamGame from "../components/SteamGame";
+import GameCard from "../components/GameCard";
 import styled from "styled-components";
 
 const Steam = () => {
@@ -33,11 +33,13 @@ const Steam = () => {
       <div>
         <StyledUl className="scroller">
           {games.map((item) => (
-            <>
-              <li>
-                <SteamGame to={`/games/${item.shortName}`} item={item} />
-              </li>
-            </>
+            <li>
+              <GameCard
+                to={`/games/${item.shortName}`}
+                itemName={item.name}
+                itemImage={item.image}
+              />
+            </li>
           ))}
         </StyledUl>
       </div>

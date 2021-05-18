@@ -8,7 +8,7 @@ const GameTitle = require("../../models/GameTitle");
 
 router.get("/", async (req, res) => {
   try {
-    let result = await GameTitle.find().sort({ _id: -1 }).limit(10);
+    let result = await GameTitle.find().sort({ _id: -1 }).limit(30);
     res.send(result);
   } catch (error) {
     console.error(error);

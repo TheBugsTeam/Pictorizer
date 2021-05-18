@@ -22,7 +22,7 @@ const update = async () => {
   let n = 0;
   for (const [key, value] of Object.entries(games)) {
     n++;
-    if (n > 700) break;
+    if (n > 900) break;
     try {
       await checkGame(key, value, { geforce: true });
     } catch (error) {
@@ -35,7 +35,7 @@ const update = async () => {
   for (const [key, value] of Object.entries(games)) {
     n++;
 
-    if (n > 400) break;
+    if (n > 500) break;
     try {
       await checkGame(key, value, { stadia: true });
     } catch (error) {
