@@ -1,6 +1,6 @@
 # cloudified ☁️
 
-# 🎮 [DEMO](https://cloudified.herokuapp.com/)
+# 🎮 [CLOUDIFIED](https://cloudified.herokuapp.com/)
 
 ## 💾 Telepítés
 
