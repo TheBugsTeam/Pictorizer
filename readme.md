@@ -1,6 +1,6 @@
-# cloudified ☁️
+# 🎮 [cloudified](https://cloudified.herokuapp.com/) ☁️
 
-# 🎮 [CLOUDIFIED](https://cloudified.herokuapp.com/)
+**_Próbáld ki a [honlapunkon](https://cloudified.herokuapp.com/)_**
 
 ## 💾 Telepítés
 
